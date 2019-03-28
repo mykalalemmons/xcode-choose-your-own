@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675283EF224D1B3F00C5E0BB /* blop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 675283EE224D1B3F00C5E0BB /* blop.mp3 */; };
 		6780ABA4221CAA58002D2E0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780ABA3221CAA58002D2E0A /* AppDelegate.swift */; };
 		6780ABA6221CAA58002D2E0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780ABA5221CAA58002D2E0A /* ViewController.swift */; };
 		6780ABA9221CAA58002D2E0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6780ABA7221CAA58002D2E0A /* Main.storyboard */; };
 		6780ABAB221CAA5A002D2E0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6780ABAA221CAA5A002D2E0A /* Assets.xcassets */; };
 		6780ABAE221CAA5A002D2E0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6780ABAC221CAA5A002D2E0A /* LaunchScreen.storyboard */; };
-		6780ABB6221F43F2002D2E0A /* pageone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780ABB5221F43F2002D2E0A /* pageone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675283EE224D1B3F00C5E0BB /* blop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = blop.mp3; path = ../../../../blop.mp3; sourceTree = "<group>"; };
 		6780ABA0221CAA58002D2E0A /* choose your own game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "choose your own game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6780ABA3221CAA58002D2E0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6780ABA5221CAA58002D2E0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		6780ABAA221CAA5A002D2E0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6780ABAD221CAA5A002D2E0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6780ABAF221CAA5A002D2E0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6780ABB5221F43F2002D2E0A /* pageone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pageone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,23 @@
 		6780ABA2221CAA58002D2E0A /* choose your own game */ = {
 			isa = PBXGroup;
 			children = (
+				679EC4F4224AF923000C10E3 /* sounds */,
 				6780ABA3221CAA58002D2E0A /* AppDelegate.swift */,
 				6780ABA5221CAA58002D2E0A /* ViewController.swift */,
 				6780ABA7221CAA58002D2E0A /* Main.storyboard */,
-				6780ABB5221F43F2002D2E0A /* pageone.swift */,
 				6780ABAA221CAA5A002D2E0A /* Assets.xcassets */,
 				6780ABAC221CAA5A002D2E0A /* LaunchScreen.storyboard */,
 				6780ABAF221CAA5A002D2E0A /* Info.plist */,
 			);
 			path = "choose your own game";
+			sourceTree = "<group>";
+		};
+		679EC4F4224AF923000C10E3 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				675283EE224D1B3F00C5E0BB /* blop.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675283EF224D1B3F00C5E0BB /* blop.mp3 in Resources */,
 				6780ABAE221CAA5A002D2E0A /* LaunchScreen.storyboard in Resources */,
 				6780ABAB221CAA5A002D2E0A /* Assets.xcassets in Resources */,
 				6780ABA9221CAA58002D2E0A /* Main.storyboard in Resources */,
@@ -139,7 +148,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6780ABA6221CAA58002D2E0A /* ViewController.swift in Sources */,
-				6780ABB6221F43F2002D2E0A /* pageone.swift in Sources */,
 				6780ABA4221CAA58002D2E0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -37,15 +37,39 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ULN-Zf-8Sn">
-                                <rect key="frame" x="49" y="323" width="316" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-7I-fmP">
+                                <rect key="frame" x="254" y="653" width="132" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="42"/>
-                                <state key="normal" title="START" backgroundImage="begin">
-                                    <color key="titleColor" red="0.42807789419999998" green="0.5830716145" blue="0.5830716145" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Rate Us!" backgroundImage="begin">
+                                    <color key="titleColor" red="0.32725631859999998" green="0.44574567539999999" blue="0.44574567539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9fb-TU-P41" kind="show" id="VZP-lI-SQ9"/>
+                                    <action selector="ratebuttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Un0-DS-Whq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGr-Ac-8cX">
+                                <rect key="frame" x="49" y="353" width="316" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <state key="normal" title="START" backgroundImage="begin">
+                                    <color key="titleColor" red="0.32725631859999998" green="0.44574567539999999" blue="0.44574567539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9iK-4Z-rQf"/>
+                                    <segue destination="9fb-TU-P41" kind="show" id="8rP-5N-XeX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVc-Qd-wYW">
+                                <rect key="frame" x="20" y="653" width="129" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Create your own!" backgroundImage="begin">
+                                    <color key="titleColor" red="0.32725631859999998" green="0.44574567539999999" blue="0.44574567539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="createButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pa9-3O-0pw"/>
+                                    <action selector="ratebuttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9GF-ZB-zsL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,7 +84,7 @@
         <!--Screen 1-->
         <scene sceneID="M05-GW-dP4">
             <objects>
-                <viewController title="Screen 1" id="9fb-TU-P41" customClass="pageone" customModule="choose_your_own_game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Screen 1" id="9fb-TU-P41" customClass="ViewController" customModule="choose_your_own_game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wxS-GW-xsr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,6 +110,7 @@
                                     <color key="titleColor" red="0.32725631862325633" green="0.4457456753661595" blue="0.4457456753661595" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
+                                    <action selector="leaveNowButtonPressed:" destination="9fb-TU-P41" eventType="touchUpInside" id="DRl-6u-feE"/>
                                     <segue destination="xbR-Fn-iSQ" kind="show" id="MUh-MK-PDH"/>
                                 </connections>
                             </button>
@@ -671,6 +696,10 @@ IAo
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zRU-rf-DHi"/>
                     </view>
+                    <connections>
+                        <outlet property="leaveButtonPressed" destination="DSh-Iv-PNX" id="B7X-gb-6rC"/>
+                        <outlet property="newsButtonPressed" destination="3TC-Wp-9e2" id="Zo6-pe-Ccu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LUP-xr-DaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2810,7 +2839,7 @@ IAo
         <segue reference="Uem-5v-hR7"/>
         <segue reference="hxj-wH-yB3"/>
         <segue reference="rSO-Nl-tiv"/>
-        <segue reference="W1p-1M-1b0"/>
-        <segue reference="8cA-Tu-V3W"/>
+        <segue reference="MUh-MK-PDH"/>
+        <segue reference="uNh-xP-ynn"/>
     </inferredMetricsTieBreakers>
 </document>
